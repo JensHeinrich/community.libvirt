@@ -49,17 +49,6 @@ options:
         type: bool
         description:
             - Specify if a given storage pool should be started automatically on system boot.
-    uri:
-        required: false
-        default: "qemu:///system"
-        description:
-            - I(libvirt) connection uri.
-        type: str
-    xml:
-        required: false
-        description:
-            - XML document used with the define command.
-        type: str
     mode:
         required: false
         choices: [ 'new', 'repair', 'resize', 'no_overwrite', 'overwrite', 'normal', 'zeroed' ]
